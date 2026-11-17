@@ -94,7 +94,7 @@ export default function Header() {
 
           <Link
             href="/setup"
-            className="hidden min-h-10 items-center justify-center rounded-[10px] bg-primary px-6 font-medium text-text-inverse shadow-sm transition-colors hover:bg-primary-hover sm:inline-flex"
+            className="hidden min-h-10 items-center justify-center rounded-xl bg-primary px-6 font-medium text-text-inverse shadow-sm transition-colors hover:bg-primary-hover sm:inline-flex"
           >
             Play Now
           </Link>
@@ -107,7 +107,7 @@ export default function Header() {
               aria-haspopup="listbox"
               aria-expanded={isLanguageOpen}
               onClick={() => setIsLanguageOpen((prev) => !prev)}
-              className="inline-flex min-h-11 min-w-11 cursor-pointer items-center justify-center gap-1.5 rounded-[10px] border border-border bg-surface px-2.5 text-text-primary transition-colors hover:bg-bg-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              className="inline-flex min-h-11 min-w-11 cursor-pointer items-center justify-center gap-1.5 rounded-xl border border-border bg-surface px-2.5 text-text-primary transition-colors hover:bg-bg-secondary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
             >
               <MaterialIcon
                 name="language"
