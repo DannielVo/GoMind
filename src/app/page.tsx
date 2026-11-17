@@ -1,24 +1,19 @@
+import HeroSection from "@/components/home/HeroSection";
+import ExperienceSection from "@/components/home/ExperienceSection";
+import HomeCTASection from "@/components/home/HomeCTASection";
+
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-bg-primary p-10">
-      <h1 className="text-4xl font-bold text-text-primary">GoMind AI</h1>
+    <main className="w-full bg-bg-primary">
+      <HeroSection />
 
-      <p className="mt-4 text-text-secondary">Challenge your mind with Go.</p>
+      <div
+        aria-hidden="true"
+        className="h-px bg-linear-to-r from-transparent via-border to-transparent"
+      />
 
-      <button
-        className="
-          mt-6
-          rounded-lg
-          bg-primary
-          px-6 py-3
-          font-semibold
-          text-text-inverse
-          transition-colors
-          hover:bg-primary-hover
-        "
-      >
-        Play Now
-      </button>
+      <ExperienceSection />
+      <HomeCTASection />
     </main>
   );
 }

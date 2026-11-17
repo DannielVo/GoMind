@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Be_Vietnam_Pro } from "next/font/google";
+
 import "./globals.css";
+
 import Header from "@/components/common/Header";
+import Footer from "@/components/common/Footer";
 
 const beVietnamPro = Be_Vietnam_Pro({
   subsets: ["latin", "vietnamese"],
@@ -25,14 +28,18 @@ export default function RootLayout({
       <head>
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
         />
       </head>
 
-      <body className={`${beVietnamPro.variable} antialiased`}>
+      <body
+        className={`${beVietnamPro.variable} flex min-h-dvh flex-col pt-20 antialiased`}
+      >
         <Header />
 
-        <div className="min-h-screen pt-20">{children}</div>
+        <div className="flex-1">{children}</div>
+
+        <Footer />
       </body>
     </html>
   );
