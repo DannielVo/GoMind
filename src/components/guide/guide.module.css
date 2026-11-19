@@ -1,0 +1,9 @@
+.section {
+  scroll-margin-top: 11rem;
+}
+
+@media (min-width: 64rem) {
+  .section {
+    scroll-margin-top: 7rem;
+  }
+}
