@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 export default function GuidePage() {
   return (
-    <main className="w-full bg-bg-primary">
+    <div className="w-full bg-bg-primary">
       <div className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 md:py-12 lg:px-8">
         <GuideHero />
 
@@ -44,6 +44,6 @@ export default function GuidePage() {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
